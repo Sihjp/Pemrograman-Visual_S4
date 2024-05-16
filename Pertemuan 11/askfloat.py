@@ -1,0 +1,14 @@
+from tkinter import *
+from tkinter.simpledialog import askfloat
+
+top = Tk()
+
+top.geometry("100x100")
+def show():
+    num = askfloat("Input", "Input a floating number")
+    print(num)
+
+B = Button(top, text ="Click", command = show)
+B.place(x = 50, y = 50)
+
+top.mainloop()
